@@ -18,3 +18,5 @@ spec:
           image: k8sworkshopcertd.azurecr.io/lms-static:v1.0.10          
           ports:
             - containerPort: 80
+      imagePullSecrets:
+        - name: acr-secret  
