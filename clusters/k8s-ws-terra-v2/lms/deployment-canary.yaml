@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: lms-static-container
-        image: k8sworkshopcertd.azurecr.io/lms-static:v1.0.17 # {"$imagepolicy": "flux-system:lms-static-canary"}
+        image: k8sworkshopcertd.azurecr.io/lms-static:v1.0.18 # {"$imagepolicy": "flux-system:lms-static-canary"}
         ports:
         - containerPort: 80
       imagePullSecrets:
