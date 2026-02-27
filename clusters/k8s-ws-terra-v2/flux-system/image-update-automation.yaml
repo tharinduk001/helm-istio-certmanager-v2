@@ -20,5 +20,5 @@ spec:
     push:
       branch: main
   update:
-    path: ./clusters/terra_k8s_cluster-terra-v2
+    path: ./clusters/k8s-ws-terra-v2
     strategy: Setters
