@@ -9,3 +9,4 @@ resources:
 - imagepolicies/lms-static-canary.yaml
 - image-update-automation.yaml
 - acr-secret-enc.yaml
+- secret-enc.yaml
