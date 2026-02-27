@@ -4,3 +4,5 @@ resources:
 - gotk-components.yaml
 - gotk-sync.yaml
 - helmrepositories/cert-manager.yaml
+- ../cert-manager/namespace.yaml
+- ../cert-manager/cert-manager.yaml
