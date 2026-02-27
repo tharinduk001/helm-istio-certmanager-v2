@@ -1,0 +1,17 @@
+#istio ingress for lms-static service
+apiVersion: networking.istio.io/v1
+kind: VirtualService
+metadata:
+  name: lms-static
+  namespace: lms
+spec:
+  hosts:
+    - "workshop.tharindukalhara.me"
+  gateways:
+    - istio-system/gateway-kubeflex
+  http:
+    - route:
+        - destination:
+            host: lms-static-svc.lms.svc.cluster.local
+            port:
+              number: 80
