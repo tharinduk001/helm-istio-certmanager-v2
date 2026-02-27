@@ -15,13 +15,3 @@ spec:
             host: lms-static-svc.lms.svc.cluster.local
             port:
               number: 80
-            subset: stable
-          weight: 90
-        - destination:
-            host: lms-static-svc.lms.svc.cluster.local
-            port:
-              number: 80
-            subset: canary
-          weight: 10
-
-
