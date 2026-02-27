@@ -4,3 +4,4 @@ resources:
 - gotk-components.yaml
 - gotk-sync.yaml
 - helmrepositories/cert-manager.yaml
+- helmrepositories/sealed-secrets.yaml
