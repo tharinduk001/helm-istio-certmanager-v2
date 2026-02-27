@@ -1,0 +1,35 @@
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: HelmRelease
+metadata:
+  name: istiod
+  namespace: istio-system
+spec:
+  interval: 5m
+  dependsOn:
+    - name: istio-base
+      namespace: istio-system
+  chart:
+    spec:
+      chart: istiod
+      sourceRef:
+        kind: HelmRepository
+        name: istio
+      interval: 1m
+  values:
+    global:
+      proxy:
+        resources:
+          requests:
+            cpu: "50m"
+          limits:
+            cpu: "50m"
+    istiod:
+      resources:
+        requests:
+          cpu: "50m"
+        limits:
+          cpu: "50m"
+      podDisruptionBudget:
+        enabled: true
+        minAvailable: null
+        maxUnavailable: 1
