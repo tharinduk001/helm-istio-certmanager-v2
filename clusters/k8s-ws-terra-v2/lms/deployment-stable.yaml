@@ -7,7 +7,7 @@ metadata:
     version: stable
   namespace: lms
 spec:
-  replicas: 5
+  replicas: 1
   selector:
     matchLabels:
       app: lms-static
