@@ -5,7 +5,3 @@ resources:
 - gotk-sync.yaml
 - helmrepositories/cert-manager.yaml
 - helmrepositories/sealed-secrets.yaml
-- imagerepositories/lms-static-canary.yaml
-- imagepolicies/lms-static-canary.yaml
-- image-update-automation.yaml
-- acr-secret-enc.yaml
