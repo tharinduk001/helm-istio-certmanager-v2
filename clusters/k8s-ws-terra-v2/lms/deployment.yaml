@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: lms-static
-          image: certdirectoryacr.azurecr.io/lms-static:v1.0.6
+          image: kalharacodes/lms-static:latest
           ports:
             - containerPort: 80
