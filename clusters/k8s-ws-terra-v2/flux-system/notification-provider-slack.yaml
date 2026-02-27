@@ -1,0 +1,13 @@
+---
+apiVersion: notification.toolkit.fluxcd.io/v1beta3
+kind: Provider
+metadata:
+  name: notification-provider-slack
+  namespace: flux-system
+spec:
+  address: https://slack.com/api/chat.postMessage
+  channel: k8s-channel
+  secretRef:
+    name: slack-secret
+  type: slack
+  username: FluxCD

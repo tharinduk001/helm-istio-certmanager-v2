@@ -10,3 +10,5 @@ resources:
 - image-update-automation.yaml
 - acr-secret-enc.yaml
 - secret-enc.yaml
+- notification-provider-slack.yaml
+- notification-alert-slack.yaml
