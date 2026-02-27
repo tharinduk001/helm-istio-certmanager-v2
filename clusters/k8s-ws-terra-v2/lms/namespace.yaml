@@ -3,6 +3,3 @@ kind: Namespace
 metadata:
   name: lms
   labels:
-    istio-injection: enabled
-spec: {}
-status: {}
