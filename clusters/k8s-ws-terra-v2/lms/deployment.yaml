@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: lms-static
-          image: k8sworkshopcertd.azurecr.io/lms-static:v1.0.10
+          image: k8sworkshopcertd.azurecr.io/lms-static:v1.0.10          
           ports:
             - containerPort: 80
