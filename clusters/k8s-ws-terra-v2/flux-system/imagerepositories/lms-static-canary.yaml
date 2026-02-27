@@ -1,0 +1,10 @@
+apiVersion: image.toolkit.fluxcd.io/v1
+kind: ImageRepository
+metadata:
+  name: lms-static-canary
+  namespace: flux-system
+spec:
+  secretRef:
+    name: acr-secret
+  image: k8sworkshopcertd.azurecr.io/lms-static
+  interval: 1m

@@ -6,3 +6,5 @@ resources:
 - acr-secret-enc.yaml
 - helmrepositories/cert-manager.yaml
 - helmrepositories/sealed-secrets.yaml
+- imagerepositories/lms-static-canary.yaml
+- imagepolicies/lms-static-canary.yaml
