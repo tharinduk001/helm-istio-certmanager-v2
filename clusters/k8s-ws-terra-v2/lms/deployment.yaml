@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lms-static
+  namespace: lms
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: lms-static
+  template:
+    metadata:
+      labels:
+        app: lms-static
+    spec:
+      containers:
+        - name: lms-static
+          image: certdirectoryacr.azurecr.io/lms-static:v1.0.6
+          ports:
+            - containerPort: 80
